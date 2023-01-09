@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+
+html {
+    background-color: black;
+    font-family: "Helvetica";
+    font-size: 16px;
+    color: seashell;
+    opacity: 0.9;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: black;
+    border-bottom: 1px solid seashell;
+    width: 100%;
+}
+
+header .logo {
+    flex: 1;
+}
+
+
+header .content {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+.content nav a {
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: seashell;
+}
+
+header .mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 540px) {
+
+    header .content {
+        display: none;
+    }
+
+    header .mobile {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+
+    .mobile ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .mobile a {
+        font-size: 0.8rem;
+        text-decoration: none;
+        color: seashell;
+        font-weight: bold;
+        border: 1px solid seashell;
+        padding: 0.4rem;
+        background-color: grey;
+    }
+
+}
+
+/* main */
+
+
+
+#main{
+    background-image: url(../images/img-mission-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 4.5rem 3rem 0 3rem;
+}
+
+.content-mission {
+    display: flex;
+    align-items: center;
+    height: 43.75rem;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    flex: 1;
+    background-color: black;
+}
+
+@media only screen and (max-width: 1116px) {
+    
+    #main{
+        margin: 2.2rem 2rem 0 2rem;
+    }
+    
+    .content-mission {
+        height: 35rem;
+        line-height: 2;
+        font-size: 1rem;
+    }
+    
+    .text {
+        background-color: grey;
+    }
+
+}
+
+@media only screen and (max-width: 540px) {
+
+    #main{
+        margin: 0 1rem;
+    }
+    
+    .content-mission {
+        height: 15rem;
+        line-height: 1.5;
+        font-size: 0.5rem;
+    }
+}
+
+
+
+/*Futured section*/
+
+#Featured-Tea{
+    margin-top: 3rem;
+}
+
+.future {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+
+.image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img img {
+    width: 18.75rem;
+    height: 12.5rem;
+}
+
+.img {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1rem 0 1rem;
+    padding-top: 1.5rem;
+}
+
+@media only screen and (max-width: 1116px) {
+
+    #Featured-Tea{
+        margin-top: 2rem;
+    }
+    
+    .future {
+        line-height: 1.5;
+        font-size: 1rem;
+    }
+    
+    .img img {
+        width: 15rem;
+        height: 9rem;
+    }
+    
+    .img {
+        padding: 0 1rem 0 1rem;
+        padding-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+
+    #Featured-Tea{
+        margin-top: 2rem;
+    }
+    
+    .future {
+        line-height: 1.5;
+        font-size: 0.5rem;
+    }
+    
+    .img img {
+        width: 8rem;
+        height: 5rem;
+    }
+}
+
+
+
+/*Location Section*/
+
+#Locations {
+    background-image: url(../images/img-locations-background.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    margin: 4rem 3rem 0 3rem;
+    height: 31.25rem;
+}
+
+#Locations h4 {
+    font-weight: lighter;
+}
+
+.Columns {
+    display: flex;
+    align-items: center;
+    line-height: 3;
+    font-size: 1.5rem;
+    flex-direction: column;
+}
+
+
+.Downtown, .East-Bayside, .Oakdale {
+    background-color: black;
+    text-align: center;
+    margin: 0 1.25rem;
+    width: 18.75rem;
+    opacity: 1;
+}
+
+.section {
+    display: flex;   
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+@media only screen and (max-width: 1116px) {
+
+    #Locations {
+        background-image: url(../images/img-locations-background.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 2rem 2rem 0 2rem;
+        height: 16rem;
+    }
+    
+    
+    .Columns {
+        padding-top: 1rem;
+        line-height: 2;
+        font-size: 1rem;
+    }
+    
+    
+    .Downtown, .East-Bayside, .Oakdale {
+        width: 9rem;
+    }
+    
+}
+
+@media only screen and (max-width: 540px) {
+
+    #Locations {
+        background-image: none;
+        margin: 0 0 2rem 0;
+        font-size: 0.5rem;
+        
+    }
+
+    .Columns {
+        display: flex;
+        align-items: center;
+        line-height: 2;
+        font-size: 0.5rem;
+    }
+    
+    
+    .Downtown, .East-Bayside, .Oakdale {
+        background-color: grey;
+        text-align: center;
+        margin-bottom: 1rem;
+        width: 10rem;
+        border: 1px dashed seashell;
+        border-radius: 3px;
+    }
+    
+    .section {
+        padding-top: 0.5rem;
+        display: flex;   
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+}
+
+
+/*Contacts*/
+
+footer {
+    display: block;
+}
+
+footer .content {
+    padding-top: 1rem;
+    text-align: center;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+
+.content h6 {
+    text-align: left;
+    padding: 2rem 0 1rem 1.5rem;
+}
+
+
+
+@media only screen and (max-width: 1116px) {
+
+    
+    footer .content {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+
+    .content h6 {
+        text-align: center;
+        padding: 1rem 0 1rem 0;
+    }
+}
